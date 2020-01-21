@@ -1,0 +1,62 @@
+% Colors
+\definecolor{Color1}{HTML}{323232}
+\definecolor{Color2}{HTML}{00203c}
+\definecolor{Color3}{HTML}{003b6f}
+\definecolor{bgColor}{HTML}{FAF0E6}
+% the logo on the title page
+\titlegraphic{\includegraphics[height=0.8cm]{note.png}}
+% Logo on every page
+%\logo{\includegraphics[height=1.5cm]{gnulogo.png}}
+
+\usepackage{booktabs,latexsym,amssymb,wasysym,fvextra}
+
+\hypersetup{colorlinks,linkcolor=,urlcolor=Color3}
+
+%\useoutertheme{split}
+%\useoutertheme{miniframes}
+\useoutertheme[subsection=false]{smoothbars}
+\usecolortheme{whale}
+\usecolortheme{orchid}
+\useinnertheme{rectangles}
+
+% Navigation bar
+\setbeamertemplate{navigation symbols}[default]
+
+%\renewcommand{\baselinestretch}{1.15}
+
+\setbeamercolor{normal text}{bg=bgColor}
+
+\setbeamercolor{frametitle}{bg=white,fg=Color2}
+
+\setbeamercolor{palette primary}{bg=Color3,fg=white}
+\setbeamercolor{palette secondary}{bg=Color2}
+\setbeamercolor{palette tertiary}{bg=Color3}
+\setbeamercolor{palette quaternary}{bg=Color1}
+
+\setbeamercolor{normal text}{fg=Color1}
+\setbeamercolor{block title}{bg=Color2}
+\setbeamercolor{example text}{fg=Color3}
+\setbeamercolor{alerted text}{fg=Color1}
+
+\setbeamercolor{item}{parent=normal text}
+\setbeamercolor{section in toc}{fg=Color3}
+
+\newcommand{\code}[1]{\textcolor{Color3}{\footnotesize{\texttt{#1}}}}
+\newcommand{\entity}[1]{\textcolor{Color2}{#1}}
+\newcommand{\good}{\textcolor{green}{\smiley}}
+\newcommand{\bad}{\textcolor{red}{\frownie}}
+
+% This is the correct way to get the frame number in the footline,
+% by modifying beamerouterthemesplit footline.
+\setbeamertemplate{footline}{
+  \leavevmode
+  \hbox{\begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm plus1fill,rightskip=.3cm]{author in head/foot}
+    \usebeamerfont{author in head/foot}\insertshortauthor
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.5ex,dp=1.125ex,leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertshorttitle
+    \usebeamerfont{date in head/foot}
+    \hfill\insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+  \end{beamercolorbox}}
+}
+
