@@ -6,9 +6,9 @@ This is a base template for generating *Beamer* presentations from *Markdown*.
 
     sudo apt-get install pandoc
                          texlive-latex-base
-						 texlive-lang-french
-						 texlive-fonts-recommended
-						 texlive-latex-extra
+                         texlive-lang-french
+                         texlive-fonts-recommended
+                         texlive-latex-extra
 
 ### Compile
 

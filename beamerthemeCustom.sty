@@ -1,11 +1,11 @@
-% Colors
+% the colors
 \definecolor{Color1}{HTML}{323232}
 \definecolor{Color2}{HTML}{00203c}
 \definecolor{Color3}{HTML}{003b6f}
 \definecolor{bgColor}{HTML}{FAF0E6}
 % the logo on the title page
 \titlegraphic{\includegraphics[height=0.8cm]{note.png}}
-% Logo on every page
+% the logo on every page
 %\logo{\includegraphics[height=1.5cm]{gnulogo.png}}
 
 \usepackage{booktabs,latexsym,amssymb,wasysym,fvextra}
@@ -17,10 +17,14 @@
 \useoutertheme[subsection=false]{smoothbars}
 \usecolortheme{whale}
 \usecolortheme{orchid}
+\useinnertheme[shadow]{rounded}
 \useinnertheme{rectangles}
 
-% Navigation bar
-\setbeamertemplate{navigation symbols}[default]
+% mathematical symbols
+\usefonttheme{professionalfonts}
+
+% to disable the navigation bar
+%\setbeamertemplate{navigation symbols}[default]
 
 %\renewcommand{\baselinestretch}{1.15}
 
@@ -41,10 +45,24 @@
 \setbeamercolor{item}{parent=normal text}
 \setbeamercolor{section in toc}{fg=Color3}
 
+% title blocks: can be better depending on selected colors
+%\setbeamercolor{titlelike}{bg=Color2,fg=white}
+
 \newcommand{\code}[1]{\textcolor{Color3}{\footnotesize{\texttt{#1}}}}
 \newcommand{\entity}[1]{\textcolor{Color2}{#1}}
 \newcommand{\good}{\textcolor{green}{\smiley}}
 \newcommand{\bad}{\textcolor{red}{\frownie}}
+
+% Does not work when generated from markdown using pandoc
+%\AtBeginPart{\frame{\partpage}}
+%
+%\AtBeginSection[]
+%{
+%  \begin{frame}<beamer>
+%    \frametitle{Plan}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
 
 % This is the correct way to get the frame number in the footline,
 % by modifying beamerouterthemesplit footline.
