@@ -14,10 +14,10 @@ header-includes:
 ## Image
 ![Outils](note.png)
 
-## Image
+## Image (LaTeX)
 \noindent\center\includegraphics[height=6.5cm]{note.png}
 
-## Colonnes
+## Colonnes (LaTeX)
 \begin{columns}
     \begin{column}{.5\linewidth}
         \center\includegraphics[height=6.5cm]{note.png}
@@ -28,13 +28,13 @@ header-includes:
 \end{columns}
 
 
-## Lien
+## Référence
 - Texte[^link]
 
 [^link]: \tiny https://www.perdu.com
 
 
-## Lien
+## Référence (LaTeX)
 
 - toto
 - tata
@@ -43,16 +43,29 @@ header-includes:
 \let\thefootnote\relax\footnote{\tiny https://www.perdu.com}\vskip 0.2cm
 
 
+## Séquence
+
+- toto \pause
+- tata \pause
+- titi
+
+
 ## Taille de police
 
 \small
 
-Un petit paragraphe.
-
-\normalsize
-
-- Idée 1
-- Idée 2
+```
+\Huge
+\huge
+\LARGE
+\Large
+\large
+\normalsize (default)
+\small
+\footnotesize
+\scriptsize
+\tiny
+```
 
 \let\thefootnote\relax\footnote{\tiny https://texblog.org/2012/08/29/changing-the-font-size-in-latex/}\vskip 0.2cm
 
@@ -75,3 +88,9 @@ echo Hello World
 `-d` $f$ | Le fichier est répertoire
 
 
+
+## Des maths
+
+$$
+\frac{\pi}{4}=\int_0^1 \sqrt{1-x^2}\mathrm dx
+$$
