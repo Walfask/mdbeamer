@@ -88,6 +88,14 @@ echo Hello World
 `-d` $f$ | Le fichier est répertoire
 
 
+## couleurs
+
+ | |
+---|---|---
+1 | \| | \pause \textcolor{highlight1}{toto}
+2 | \| | \pause \textcolor{red}{tata}
+3 | \| | \pause \textcolor{blue}{titi}
+
 
 ## Des maths
 
