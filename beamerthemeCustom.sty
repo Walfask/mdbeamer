@@ -3,15 +3,19 @@
 \definecolor{Color2}{HTML}{00203c}
 \definecolor{Color3}{HTML}{003b6f}
 \definecolor{bgColor}{HTML}{FAF0E6}
-\definecolor{highlight1}{HTML}{29aa29}
+\definecolor{myGreen}{HTML}{29aa29}
 % the logo on the title page
 \titlegraphic{\includegraphics[height=0.8cm]{note.png}}
 % the logo on every page
-%\logo{\includegraphics[height=1.5cm]{note.png}}
+%\logo{\includegraphics[height=1.5cm]{gnulogo.png}}
 
 \usepackage{booktabs,latexsym,amssymb,wasysym,fvextra}
 
 \hypersetup{colorlinks,linkcolor=,urlcolor=Color3}
+
+% Columns (https://stackoverflow.com/questions/15142134/slides-with-columns-in-pandoc/26069751#26069751)
+\newcommand{\columnsbegin}{\begin{columns}}
+\newcommand{\columnsend}{\end{columns}}
 
 %\useoutertheme{split}
 %\useoutertheme{miniframes}

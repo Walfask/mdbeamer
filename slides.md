@@ -18,14 +18,31 @@ header-includes:
 \noindent\center\includegraphics[height=6.5cm]{note.png}
 
 ## Colonnes (LaTeX)
-\begin{columns}
-    \begin{column}{.5\linewidth}
-        \center\includegraphics[height=6.5cm]{note.png}
-    \end{column}
-    \begin{column}{.5\linewidth}
-        \center\includegraphics[height=6.5cm]{note.png}
-    \end{column}
-\end{columns}
+
+\columnsbegin
+\column{.5\textwidth}
+
+\small
+
+```
+# Un titre
+
+## Des listes
+
+### Listes à points
+- **En gras**
+- *En italique*
+- ~~texte rayé~~
+
+### Liste numérotée
+1. Premier
+1. Deuxième
+1. Troisième
+```
+
+\column{.5\textwidth}
+    \center\includegraphics[height=6.5cm]{note.png}
+\columnsend
 
 
 ## Référence
@@ -92,7 +109,7 @@ echo Hello World
 
  | |
 ---|---|---
-1 | \| | \pause \textcolor{highlight1}{toto}
+1 | \| | \pause \textcolor{myGreen}{toto}
 2 | \| | \pause \textcolor{red}{tata}
 3 | \| | \pause \textcolor{blue}{titi}
 
