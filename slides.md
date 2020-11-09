@@ -71,6 +71,9 @@ header-includes:
 
 \small
 
+\columnsbegin
+\column{.5\textwidth}
+\framebegin
 ```
 \Huge
 \huge
@@ -83,17 +86,20 @@ header-includes:
 \scriptsize
 \tiny
 ```
+\frameend
+\column{.5\textwidth}
+\columnsend
 
 \let\thefootnote\relax\footnote{\tiny https://texblog.org/2012/08/29/changing-the-font-size-in-latex/}\vskip 0.2cm
 
 
 ## Exemple code
 
-\small
-
+\framebegin
 ```sh
 echo Hello World
 ```
+\frameend
 
 
 ## Tableau

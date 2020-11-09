@@ -11,11 +11,26 @@
 
 \usepackage{booktabs,latexsym,amssymb,wasysym,fvextra}
 
-\hypersetup{colorlinks,linkcolor=,urlcolor=Color3}
+% https://tex.stackexchange.com/questions/263706/latex-adding-cell-padding-to-a-text-frame
+\usepackage[most]{tcolorbox}
+\newtcolorbox{myframe}[1][]{
+  enhanced,
+  arc=10pt,
+  auto outer arc,
+  colback=white,
+  boxrule=0.8pt,
+  left=15pt,
+  right=15pt
+}
+
+\newcommand{\framebegin}{\begin{myframe}}
+\newcommand{\frameend}{\end{myframe}}
 
 % Columns (https://stackoverflow.com/questions/15142134/slides-with-columns-in-pandoc/26069751#26069751)
 \newcommand{\columnsbegin}{\begin{columns}}
 \newcommand{\columnsend}{\end{columns}}
+
+\hypersetup{colorlinks,linkcolor=,urlcolor=Color3}
 
 %\useoutertheme{split}
 %\useoutertheme{miniframes}
